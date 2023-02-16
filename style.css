@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fraunces', serif;
+    background-color:  hsl(30, 38%, 92%);
+    
+}
+.mobile-design{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+.desktop-design{
+    width: 100%;
+    display: none;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 2rem 0rem 2rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+}
+.mobile-product{
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+.written-content{
+    width: 90%;
+    margin: 1rem 0 1rem 1rem; 
+}
+
+#perf{
+    font-family: 'Montseerat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+.desktop-product{
+    display: none;
+}
+.text{
+    margin-top: -0.6rem;
+}
+.written-content p {
+    font-family: 'Montseerat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 24px;
+    font-size: 16px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    
+}
+.price h1{
+    color:  hsl(158, 36%, 37%);
+}
+.price p{
+    text-align: center;
+    margin: 2rem 0 0 1.5rem;
+}
+
+.cart{
+    width: 90%;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%) ;
+    border: none;
+    height: 2.5rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+a{ 
+    font-family: 'Montseerat',sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    text-decoration: none;
+}
+.cart img{
+    margin: 0.4rem;
+    margin-right: 0.7rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .mobile-design{
+        display: none;
+    }
+    .desktop-design{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        margin-top: 25%;
+        width: 50%;
+        height: 50%;
+        border-radius: 14px;
+        background-color: white;
+    }
+    .mobile-product{
+        display: none;
+    }
+    .desktop-product{
+        border-bottom-left-radius: 14px;
+        border-top-left-radius: 14px;
+        display: block;
+        width: 50%;
+    }
+
+    .written-content{
+        height: 100%;
+        width: 35%;
+        padding: 1.8rem;
+    }
+    .text {
+        margin-top: -0.4rem;
+    }
+    .cart{
+        margin-top: 1rem;
+    }
+
+
+}
